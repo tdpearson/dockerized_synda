@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  synda:
+    image: synda
+    restart: unless-stopped
+    #user: "${UID}:${GID}"
+    build: 
+      context: .
+      args:
+        SYNDA_VERSION: 3.13
+    volumes:
+      - ./sdt:/root/sdt
