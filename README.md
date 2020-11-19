@@ -43,3 +43,6 @@ This project wraps synda into a Docker container to create a repeatable install.
 ```
 $ docker-compose run --rm synda synda [command]
 ```
+
+## TODO
+1. New files are saved with root ownership. Update to have the host user own these files.
